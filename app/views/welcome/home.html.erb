@@ -3,7 +3,6 @@
   <h2>Email: <%= @user.email %></h2>
   <h2>Facebook UID: <%= @user.uid %> </h2>
   <img src="<%= @user.image %>">
-  <% else %>
+<% else %>
     <%= link_to('Log in with Facebook!', '/auth/facebook') %>
 end
-
