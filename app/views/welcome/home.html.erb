@@ -1,1 +1,6 @@
+<% if session[:user_id] %>
+  <h1><%= @user.name %></h1>
+  <h2>Email: <%= @user.email %></h2>
+  <h2>Facebook UID: </h2>
+end
 <%= link_to('Log in with Facebook!', '/auth/facebook') %>
